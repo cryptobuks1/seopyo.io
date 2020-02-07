@@ -1,31 +1,26 @@
 <template>
-  <b-link :to="{ name: 'users-hid-profile', params: { hid: user.hid } }" class="user-card-wrap">
-    <b-card :class="`user-card user-card-${type}`">
-      <template v-slot:header>
-        <b-img :src="user.avatar" :alt="user.full_name" width="48" rounded="circle"></b-img>
-      </template>
+  <b-card
+    :title="organization.name"
+    :img-src="organization.cover_image"
+    :class="`organization-card organization-card-${type}`"
+    :img-alt="organization.name"
+    img-top
+  >
+    <template v-slot:header>
+      <b-img :src="user.avatar" :alt="user.full_name" width="48" rounded="circle"></b-img>
+    </template>
 
-      <h6 v-html="user.full_name" class="user-card-title" />
-      <div class="user-card-meta">
-        <div v-b-tooltip.hover :title="`${user.statistics.collections} Collection`" class="user-card-meta-item">
-          <layers-icon size="14" /> <b v-html="user.statistics.collections" />
-        </div>
-        <div v-b-tooltip.hover :title="`${user.statistics.followers} Followers`" class="user-card-meta-item">
-          <users-icon size="14" /> <b v-html="user.statistics.followers" />
-        </div>
-      </div>
-    </b-card>
-  </b-link>
+    <b-card-text>
+      This card has supporting text below as a natural lead-in to additional content.
+    </b-card-text>
+
+    <b-card-text class="small text-muted">Last updated 3 mins ago</b-card-text>
+  </b-card>
 </template>
 <script>
-import { LayersIcon, UsersIcon } from 'vue-feather-icons'
-
 export default {
   name: 'UserCard',
-  components: {
-    LayersIcon,
-    UsersIcon
-  },
+  components: {},
   props: {
     type: {
       default() {
@@ -44,14 +39,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import '../assets/styles/variables';
-
-.user-card-wrap {
-  display: block;
-
-  + .user-card-wrap {
-    margin-top: $spacer;
-  }
-}
 
 .user-card {
   padding: $spacer-sm;

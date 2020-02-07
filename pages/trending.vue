@@ -1,38 +1,38 @@
 <template>
-  <div class="page-trending">
+  <div class="page-trending py-sm-5">
     <section class="trending-users mb-5">
-      <h3 class="app-heading mb-4">Trending Users</h3>
-      <b-row>
-        <b-col v-for="user in userList" :key="user.hid" cols="3">
-          <UserCard :user="user" />
-        </b-col>
-      </b-row>
+      <user-list :data="userList" direction="horizontal">
+        <template slot="title">
+          <h3 class="font-weight-bold mb-0">Trending Users</h3>
+        </template>
+      </user-list>
     </section>
     <section class="trending-collections mb-5">
-      <h3 class="app-heading mb-4">Trending Collections</h3>
-      <b-row>
-        <b-col v-for="collection in collectionList" :key="collection.hid" cols="4">
-          <CollectionCard :collection="collection" />
-        </b-col>
-      </b-row>
+      <collection-list :data="collectionList" direction="horizontal">
+        <template slot="title">
+          <h3 class="font-weight-bold mb-0">Trending Collections</h3>
+        </template>
+      </collection-list>
     </section>
   </div>
 </template>
 
 <script>
-import { userList, collectionList } from '@/mock'
-import UserCard from '@/components/UserCard'
-import CollectionCard from '@/components/CollectionCard'
+import take from 'lodash/take'
+
+import { userList, collectionList } from '../mock'
+import UserList from '../components/UserList'
+import CollectionList from '../components/CollectionList'
 
 export default {
   components: {
-    UserCard,
-    CollectionCard
+    UserList,
+    CollectionList
   },
   data() {
     return {
-      userList,
-      collectionList
+      userList: take(userList, 9),
+      collectionList: take(collectionList, 8)
     }
   }
 }

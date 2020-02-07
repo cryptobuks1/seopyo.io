@@ -1,64 +1,31 @@
+import faker from 'faker'
+import times from 'lodash/times'
 import sample from 'lodash/sample'
+
+import { generateHid } from './helpers'
 
 import userList from './UserList'
 import bookmarkList from './BookmarkList'
 import collectionList from './CollectionList'
 
-export default [
-  {
-    type: 'add',
-    user: sample(userList),
-    bookmark: sample(bookmarkList),
-    collection: sample(collectionList)
-  },
-  {
-    type: 'subscribe',
-    user: sample(userList),
-    collection: sample(collectionList)
-  },
-  {
-    type: 'subscribe',
-    user: sample(userList),
-    collection: sample(collectionList)
-  },
-  {
-    type: 'add',
-    user: sample(userList),
-    bookmark: sample(bookmarkList),
-    collection: sample(collectionList)
-  },
-  {
-    type: 'add',
-    user: sample(userList),
-    bookmark: sample(bookmarkList),
-    collection: sample(collectionList)
-  },
-  {
-    type: 'remove',
-    user: sample(userList),
-    bookmark: sample(bookmarkList),
-    collection: sample(collectionList)
-  },
-  {
-    type: 'subscribe',
-    user: sample(userList),
-    collection: sample(collectionList)
-  },
-  {
-    type: 'remove',
-    user: sample(userList),
-    bookmark: sample(bookmarkList),
-    collection: sample(collectionList)
-  },
-  {
-    type: 'add',
-    user: sample(userList),
-    bookmark: sample(bookmarkList),
-    collection: sample(collectionList)
-  },
-  {
-    type: 'remove',
-    user: sample(userList),
-    bookmark: sample(bookmarkList)
+export default times(50, () => {
+  const obj = {
+    hid: generateHid(),
+    type: faker.helpers.randomize(['add', 'remove', 'subscribe'])
   }
-]
+
+  const user = sample(userList)
+  const bookmark = sample(bookmarkList)
+  const collection = sample(collectionList)
+
+  if (obj.type === 'add' || obj.type === 'remove') {
+    obj.user = user
+    obj.bookmark = bookmark
+    obj.collection = collection
+  } else if (obj.type === 'subscribe') {
+    obj.user = user
+    obj.collection = collection
+  }
+
+  return obj
+})

@@ -2,8 +2,20 @@
   <b-row class="page-index">
     <b-col sm="3" class="border-right py-sm-5 mt-4 mt-sm-0 d-none d-sm-block">
       <UserNav class="mb-4" />
-      <CollectionList :data="collectionList" class="mb-4" />
-      <OrganizationList :data="organizationList" />
+      <CollectionList :data="collectionList" class="mb-4">
+        <template slot="actions">
+          <b-button :to="{ name: 'collections' }" v-if="collectionList.length > 5" size="sm" variant="primary">
+            All
+          </b-button>
+        </template>
+      </CollectionList>
+      <OrganizationList :data="organizationList">
+        <template slot="actions">
+          <b-button :to="{ name: 'organizations' }" v-if="organizationList.length > 5" size="sm" variant="primary">
+            All
+          </b-button>
+        </template>
+      </OrganizationList>
     </b-col>
 
     <b-col sm="6" class="page-index-content py-sm-5 mt-4 mt-sm-0">
@@ -17,12 +29,14 @@
 </template>
 
 <script>
-import { userList, feedList, collectionList, organizationList } from '../mock'
+import take from 'lodash/take'
+
 import UserNav from '../components/UserNav'
 import UserList from '../components/UserList'
 import FeedList from '../components/FeedList'
 import CollectionList from '../components/CollectionList'
 import OrganizationList from '../components/OrganizationList'
+import { userList, feedList, collectionList, organizationList } from '../mock'
 
 export default {
   components: {
@@ -34,10 +48,10 @@ export default {
   },
   data() {
     return {
-      userList,
-      feedList,
-      collectionList,
-      organizationList
+      userList: take(userList, 5),
+      feedList: take(feedList, 30),
+      collectionList: take(collectionList, 5),
+      organizationList: take(organizationList, 0)
     }
   }
 }
