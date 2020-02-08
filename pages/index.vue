@@ -1,29 +1,29 @@
 <template>
   <b-row class="page-index">
     <b-col sm="3" class="border-right py-sm-5 mt-4 mt-sm-0 d-none d-sm-block">
-      <UserNav class="mb-4" />
-      <CollectionList :data="collectionList" class="mb-4">
+      <user-nav class="mb-4" />
+      <collection-list :data="collectionList" class="mb-4">
         <template slot="actions">
           <b-button :to="{ name: 'collections' }" v-if="collectionList.length > 5" size="sm" variant="primary">
             All
           </b-button>
         </template>
-      </CollectionList>
-      <OrganizationList :data="organizationList">
+      </collection-list>
+      <organization-list :data="organizationList">
         <template slot="actions">
           <b-button :to="{ name: 'organizations' }" v-if="organizationList.length > 5" size="sm" variant="primary">
             All
           </b-button>
         </template>
-      </OrganizationList>
+      </organization-list>
     </b-col>
 
     <b-col sm="6" class="page-index-content py-sm-5 mt-4 mt-sm-0">
-      <FeedList :data="feedList" title="Recent Activity" />
+      <feed-list :data="feedList" title="Recent Activity" />
     </b-col>
 
     <b-col sm="3" class="border-left py-sm-5 mt-4 mt-sm-0 d-none d-sm-block">
-      <UserList :data="userList" title="Explore Users" />
+      <user-list :data="userList" title="Explore Users" />
     </b-col>
   </b-row>
 </template>

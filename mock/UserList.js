@@ -10,8 +10,9 @@ export default times(20, () => {
     email: faker.internet.email(),
     avatar: faker.internet.avatar(),
     statistics: {
-      followers: faker.random.number(),
-      collections: faker.random.number()
+      followers: faker.random.number({ min: 0, max: 4000 }),
+      collections: faker.random.number({ min: 0, max: 100 }),
+      organizations: faker.random.number({ min: 0, max: 24 })
     }
   }
 

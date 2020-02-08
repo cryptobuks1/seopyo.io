@@ -25,23 +25,8 @@
             :key="collection.hid"
             type="horizontal"
           />
+          <load-more-card :handler="loadMoreHandler" title="All Collections" />
         </b-card-group>
-        <!--        <b-row-->
-        <!--          v-for="(group, index) in chunk(data, 12 / cols)"-->
-        <!--          :key="index"-->
-        <!--          :class="{ 'mb-4': index !== data.length / cols }"-->
-        <!--        >-->
-        <!--          <b-col v-for="collection in group" :key="collection.hid" :cols="cols">-->
-        <!--            <collection-card :collection="collection" type="horizontal" />-->
-        <!--          </b-col>-->
-
-        <!--          <b-col v-if="index === data.length / cols">-->
-        <!--            <b-card body-class="d-flex align-items-center justify-content-between">-->
-        <!--              <h4>All Collections</h4>-->
-        <!--              <arrow-right-icon size="1.5x" />-->
-        <!--            </b-card>-->
-        <!--          </b-col>-->
-        <!--        </b-row>-->
       </div>
     </div>
   </div>
@@ -49,13 +34,13 @@
 <script>
 import get from 'lodash/get'
 import chunk from 'lodash/chunk'
-// import { ArrowRightIcon } from 'vue-feather-icons'
 
 import CollectionCard from './CollectionCard'
+import LoadMoreCard from './LoadMoreCard'
 export default {
   name: 'CollectionList',
   components: {
-    // ArrowRightIcon,
+    LoadMoreCard,
     CollectionCard
   },
   props: {
@@ -86,7 +71,10 @@ export default {
   },
   methods: {
     get,
-    chunk
+    chunk,
+    loadMoreHandler() {
+      alert('Load more content!')
+    }
   }
 }
 </script>

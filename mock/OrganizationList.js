@@ -10,7 +10,7 @@ export default times(20, () => {
     hid: generateHid(),
     name: `${faker.company.companyName()}${faker.company.companySuffix()}`,
     users: take(userList, 4),
-    cover_image: faker.image.technics(),
-    logo_image: faker.image.abstract()
+    cover_image: 'https://placeimg.com/1280/300/any',
+    logo_image: 'https://placeimg.com/128/128/tech'
   }
 })
