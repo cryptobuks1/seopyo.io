@@ -1,61 +1,21 @@
 {
-  "name": "seopyo.io",
-  "version": "1.0.0",
-  "description": "My great Nuxt.js project",
-  "author": "Üsame Fethullah AVCI &lt;usameavci@gmail.com&gt;",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt --hostname seopyo.test --port 9001",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "test": "ava",
-    "test:unit": "cross-env TEST=unit ava --config unit.config.js",
-    "test:e2e": "cross-env TEST=e2e ava --config e2e.config.js"
-  },
-  "lint-staged": {
-    "*.{js,vue}": "eslint"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.19",
+        "cross-env": "^5.1",
+        "laravel-mix": "^5.0.1",
+        "lodash": "^4.17.13",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.15.2",
+        "sass-loader": "^8.0.0"
     }
-  },
-  "dependencies": {
-    "@nuxtjs/dotenv": "^1.4.0",
-    "@nuxtjs/pwa": "^3.0.0-0",
-    "bootstrap": "^4.1.3",
-    "bootstrap-vue": "^2.0.0",
-    "lodash": "^4.17.15",
-    "node-sass": "^4.13.1",
-    "nuxt": "^2.0.0",
-    "sass-loader": "^8.0.2",
-    "stylelint-config-airbnb": "^0.0.0",
-    "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.14.2",
-    "vue-feather-icons": "^5.0.0"
-  },
-  "devDependencies": {
-    "@nuxtjs/eslint-config": "^1.0.1",
-    "@nuxtjs/eslint-module": "^1.0.0",
-    "@nuxtjs/stylelint-module": "^3.1.0",
-    "@vue/test-utils": "^1.0.0-beta.27",
-    "ava": "^2.2.0",
-    "babel-eslint": "^10.0.1",
-    "babel-plugin-module-resolver": "^3.2.0",
-    "browser-env": "^3.2.5",
-    "eslint": "^6.1.0",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-nuxt": ">=0.4.2",
-    "eslint-plugin-prettier": "^3.0.1",
-    "faker": "^4.1.0",
-    "husky": "^2.6.0",
-    "lint-staged": "^8.2.1",
-    "prettier": "^1.16.4",
-    "require-extension-hooks": "^0.3.3",
-    "require-extension-hooks-babel": "^1.0.0",
-    "require-extension-hooks-vue": "^2.0.0",
-    "stylelint": "^10.1.0"
-  }
 }
