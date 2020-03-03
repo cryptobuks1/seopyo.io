@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Providers\RouteServiceProvider;
+use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
@@ -22,11 +22,28 @@ class LoginController extends Controller
     use AuthenticatesUsers;
 
     /**
-     * Where to redirect users after login.
+     * Redirect the user to the GitHub authentication page.
      *
-     * @var string
+     * @return \Illuminate\Http\Response|\Symfony\Component\HttpFoundation\RedirectResponse
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    public function redirectToProvider($provider)
+    {
+        return Socialite::driver($provider)->redirect();
+    }
+
+    /**
+     * Obtain the user information from GitHub.
+     *
+     */
+    public function handleProviderCallback($provider)
+    {
+        $user = Socialite::driver($provider)->user();
+
+        return response()->json([
+            'method' => 'LoginController@handleProviderCallback',
+            'token'  => $user->token,
+        ]);
+    }
 
     /**
      * Create a new controller instance.

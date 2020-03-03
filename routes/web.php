@@ -1,5 +1,7 @@
 <?php
 
+/** @noinspection PhpUndefinedMethodInspection */
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +13,34 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('authorize/{provider}', 'Auth\LoginController@redirectToProvider')->name('auth.social.redirect');
+Route::get('authorize/{provider}/callback', 'Auth\LoginController@handleProviderCallback')->name('auth.social.callback');
+
+Route::layout('layouts.base')->section('body')->group(function () {
+    $mainRoutes = [
+        '/'         => 'home',
+        '/trending' => 'trending',
+        '/{id}'     => 'profile',
+        '/faq'      => 'faq',
+        '/contact'  => 'contact',
+        '/support'  => 'support',
+    ];
+
+    foreach ($mainRoutes as $path => $name) {
+        Route::livewire($path, $name)->name($name);
+    }
+
+    Route::prefix('account')->middleware('auth')->group(function () {
+        $accountRoutes = [
+            '/'              => 'account.dashboard',
+            '/collections'   => 'account.collections',
+            '/organizations' => 'account.organizations',
+            '/stars'         => 'account.stars',
+            '/settings'      => 'account.settings',
+        ];
+
+        foreach ($accountRoutes as $path => $name) {
+            Route::livewire($path, $name)->name($name);
+        }
+    });
 });
