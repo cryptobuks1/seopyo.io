@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c85198a2-890e-4d38-957a-960b989ea213" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/seopyo.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/seopyo.io.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +172,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="de.espend.idea.laravel.ui.TemplateSettingsForm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -221,6 +207,11 @@
       <workItem from="1582908568888" duration="57000" />
       <workItem from="1583164059210" duration="1466000" />
       <workItem from="1583226466907" duration="27000" />
+      <workItem from="1583358453802" duration="4000" />
+      <workItem from="1583390918733" duration="293000" />
+      <workItem from="1583394307329" duration="318000" />
+      <workItem from="1583398357783" duration="166000" />
+      <workItem from="1583501184470" duration="189000" />
     </task>
     <servers />
   </component>
@@ -236,10 +227,18 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="648" y="335" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1582891471592" />
-    <state x="461" y="239" key="SettingsEditor" timestamp="1582904264304">
+    <state x="192" y="109" key="DiffContextDialog" timestamp="1583501367732">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="461" y="239" key="SettingsEditor/0.0.1920.1200/1920.0.1920.1080@0.0.1920.1200" timestamp="1582813307252" />
+    <state x="192" y="109" key="DiffContextDialog/0.0.1920.1200/1920.0.1920.1080@0.0.1920.1200" timestamp="1583501367732" />
+    <state x="742" y="317" key="RollbackChangesDialog" timestamp="1583501369266">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="742" y="317" key="RollbackChangesDialog/0.0.1920.1200/1920.0.1920.1080@0.0.1920.1200" timestamp="1583501369266" />
+    <state x="923" y="201" key="SettingsEditor" timestamp="1583398523033">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="923" y="201" key="SettingsEditor/0.0.1920.1200/1920.0.1920.1080@0.0.1920.1200" timestamp="1583398523033" />
     <state x="461" y="239" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1582904264304" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1583165461870">
       <screen x="0" y="0" width="1920" height="1200" />
