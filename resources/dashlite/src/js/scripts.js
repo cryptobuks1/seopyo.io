@@ -90,7 +90,7 @@
             });
         } else {
             $(clip).css('display','none');
-        };
+        }
     };
 
     // CurrentLink Detect @v1.0
@@ -379,7 +379,7 @@
         $(dd).on('click', function (e) {
             if(!$(e.target).is(ex)){ 
                 e.stopPropagation();
-                return;
+
             }
         });
     }
