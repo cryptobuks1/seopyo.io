@@ -2,8 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c85198a2-890e-4d38-957a-960b989ea213" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/dashlite.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/style-email.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Nioicon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Nioicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Nioicon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Nioicon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Nunito-Bold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Nunito-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Nunito-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Nunito-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Nunito-Regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Nunito-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Nunito-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Nunito-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Roboto-Bold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Roboto-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Roboto-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Roboto-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Roboto-Light.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Roboto-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Roboto-Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Roboto-Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Roboto-Medium.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Roboto-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Roboto-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Roboto-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Roboto-Regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Roboto-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Roboto-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/fonts/Roboto-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/apps-messages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/crypto-chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/general-chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/invest-chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/sweetalert-example.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/toastr-example.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/account/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/account/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +220,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Traits" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -188,6 +237,7 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/layouts" />
       <recent name="$PROJECT_DIR$/app/Traits" />
       <recent name="$PROJECT_DIR$/database/seeds" />
       <recent name="$PROJECT_DIR$/public" />
@@ -223,7 +273,7 @@
       <workItem from="1583394307329" duration="318000" />
       <workItem from="1583398357783" duration="166000" />
       <workItem from="1583501184470" duration="189000" />
-      <workItem from="1584040658261" duration="6499000" />
+      <workItem from="1584040658261" duration="9710000" />
     </task>
     <servers />
   </component>
@@ -235,10 +285,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="560" y="265" key="#Composer/0.0.1920.1200/1920.0.1920.1080@0.0.1920.1200" timestamp="1582813333987" />
-    <state x="773" y="323" key="#com.intellij.ide.util.MemberChooser" timestamp="1584044648842">
+    <state x="773" y="323" key="#com.intellij.ide.util.MemberChooser" timestamp="1584050183143">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="773" y="323" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1584044648842" />
+    <state x="773" y="323" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1584050183143" />
     <state x="648" y="335" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582891471592">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -247,10 +297,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="702" y="20" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1584040864317" />
-    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584043827429">
+    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584050132140">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1584043827429" />
+    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1584050132140" />
     <state x="704" y="452" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1584044053152">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -268,19 +318,23 @@
     </state>
     <state x="923" y="201" key="SettingsEditor/0.0.1920.1200/1920.0.1920.1080@0.0.1920.1200" timestamp="1583398523033" />
     <state x="0" y="0" width="1920" height="1200" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1584043090951" />
-    <state width="200" height="445" key="SwitcherDM" timestamp="1584047536209">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1584050908105">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.0.1920.1200/1920.0.1920.1080@0.0.1920.1200" timestamp="1583165461870" />
-    <state width="200" height="445" key="SwitcherDM/0.0.1920.1200@0.0.1920.1200" timestamp="1584047536209" />
+    <state width="500" height="445" key="SwitcherDM/0.0.1920.1200@0.0.1920.1200" timestamp="1584050908105" />
     <state x="736" y="524" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584043978302">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="736" y="524" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1200@0.0.1920.1200" timestamp="1584043978302" />
-    <state x="625" y="262" width="670" height="676" key="search.everywhere.popup" timestamp="1584047533219">
+    <state x="630" y="350" width="1082" height="687" key="find.popup" timestamp="1584050616918">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="630" y="350" width="1082" height="687" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1584050616918" />
+    <state x="625" y="262" width="670" height="676" key="search.everywhere.popup" timestamp="1584050887011">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="625" y="262" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200/1920.0.1920.1080@0.0.1920.1200" timestamp="1583164980040" />
-    <state x="625" y="262" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1584047533219" />
+    <state x="625" y="262" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1584050887011" />
   </component>
 </project>
