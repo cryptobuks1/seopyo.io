@@ -77,7 +77,7 @@ class Signin extends Component
 
             $this->clearLoginAttempts($request);
 
-            return redirect()->route('account.dashboard');
+            return redirect()->route('home');
         }
 
         // If the login attempt was unsuccessful we will increment the number of attempts

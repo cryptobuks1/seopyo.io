@@ -1,0 +1,18 @@
+.progress{
+    &-bar{
+        height: 100%;
+        line-height: 1;
+    }
+    &-sm{
+        height:.25rem;
+    }
+    &-lg{
+        height:1rem;
+    }
+    &-pill{
+        border-radius: 100px;
+        .progress-bar{
+            @extend .progress-pill;
+        }
+    }
+}

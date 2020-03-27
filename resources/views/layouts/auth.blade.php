@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ config('app.name') }}</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('assets/css/dashlite.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/theme.css') }}">
-
-    @livewireStyles
+    @include('livewire.partials.head')
 </head>
 <body>
 <div class="nk-app-root">
@@ -103,8 +95,6 @@
     </div>
 </div>
 
-@livewireScripts
-<script type="text/javascript" src="{{ asset('assets/js/bundle.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/scripts.js') }}"></script>
+@include('livewire.partials.body-end')
 </body>
 </html>
