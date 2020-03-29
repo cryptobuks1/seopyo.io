@@ -5,6 +5,10 @@
       <w>authenticatable</w>
       <w>collectionable</w>
       <w>fillable</w>
+      <w>livewire</w>
+      <w>seopyo</w>
+      <w>signin</w>
+      <w>signup</w>
     </words>
   </dictionary>
 </component>

@@ -60,6 +60,8 @@ class Signin extends Component
      * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|void
      *
      * @throws \Illuminate\Validation\ValidationException
+     *
+     * @noinspection PhpUnused
      */
     public function signin(Request $request)
     {
