@@ -1,0 +1,32 @@
+.app-logo {
+   font-size: 3em;
+   line-height: 1;
+   animation: appear;
+   margin: 0.688rem 0;
+   font-family: Dosis, sans-serif;
+
+   .app-logo {
+      &-main {
+         top: -6px;
+         color: $secondary;
+         position: relative;
+      }
+
+      &-ext {
+         top: -6px;
+         left: -0.4rem;
+         color: $primary;
+         position: relative;
+      }
+   }
+}
+
+@keyframes appear {
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}

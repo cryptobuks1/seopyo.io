@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c85198a2-890e-4d38-957a-960b989ea213" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/u.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/u.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/HorizonServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/HorizonServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/TelescopeServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/TelescopeServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Auth/Signin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Auth/Signin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/dashlite/src/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/dashlite/src/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/partials/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/partials/head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +30,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/app/Enums/UserStatus.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="NamedScopeManager">
     <scope name="Local" pattern="" />
@@ -188,7 +185,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Traits" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/livewire/partials" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -198,23 +195,40 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/livewire/partials" />
+      <recent name="$PROJECT_DIR$/resources/views/livewire/components" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/resources/assets/scss" />
+      <recent name="$PROJECT_DIR$/resources/views/layouts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Traits" />
-      <recent name="$PROJECT_DIR$/database/seeds" />
-      <recent name="$PROJECT_DIR$/public" />
-    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.watch-poll">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <configuration name="watch-poll" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch-poll" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.watch-poll" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="showServicesTree" value="false" />
@@ -240,7 +254,15 @@
       <workItem from="1583394307329" duration="318000" />
       <workItem from="1583398357783" duration="166000" />
       <workItem from="1583501184470" duration="189000" />
-      <workItem from="1584040658261" duration="6225000" />
+      <workItem from="1584040658261" duration="9947000" />
+      <workItem from="1584080556091" duration="406000" />
+      <workItem from="1584104755522" duration="1667000" />
+      <workItem from="1585323450033" duration="5862000" />
+      <workItem from="1585399949994" duration="14000" />
+      <workItem from="1585399987798" duration="3578000" />
+      <workItem from="1585515084427" duration="34000" />
+      <workItem from="1585517739014" duration="73000" />
+      <workItem from="1585518028937" duration="1405000" />
     </task>
     <servers />
   </component>
@@ -252,22 +274,26 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="560" y="265" key="#Composer/0.0.1920.1200/1920.0.1920.1080@0.0.1920.1200" timestamp="1582813333987" />
-    <state x="773" y="323" key="#com.intellij.ide.util.MemberChooser" timestamp="1584044648842">
+    <state x="605" y="409" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585326189207">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="773" y="323" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1584044648842" />
-    <state x="648" y="335" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582891471592">
+    <state x="605" y="409" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1585326189207" />
+    <state x="773" y="323" key="#com.intellij.ide.util.MemberChooser" timestamp="1585519564089">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="648" y="335" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1582891471592" />
+    <state x="773" y="323" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1200@0.0.1920.1200" timestamp="1585519564089" />
+    <state x="648" y="335" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585399955707">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="648" y="335" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1585399955707" />
     <state x="702" y="20" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584040864317">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="702" y="20" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1584040864317" />
-    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584043827429">
+    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1585518830903">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1584043827429" />
+    <state x="698" y="362" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1585518830903" />
     <state x="704" y="452" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1584044053152">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
@@ -276,28 +302,53 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="192" y="109" key="DiffContextDialog/0.0.1920.1200/1920.0.1920.1080@0.0.1920.1200" timestamp="1583501367732" />
-    <state x="742" y="317" key="RollbackChangesDialog" timestamp="1583501369266">
+    <state width="1878" height="248" key="GridCell.Tab.0.bottom" timestamp="1585518528872">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1585518528872" />
+    <state width="1878" height="248" key="GridCell.Tab.0.center" timestamp="1585518528870">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1585518528870" />
+    <state width="1878" height="248" key="GridCell.Tab.0.left" timestamp="1585518528869">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1585518528869" />
+    <state width="1878" height="248" key="GridCell.Tab.0.right" timestamp="1585518528871">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1585518528871" />
+    <state x="742" y="317" key="RollbackChangesDialog" timestamp="1585324792813">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="742" y="317" key="RollbackChangesDialog/0.0.1920.1200/1920.0.1920.1080@0.0.1920.1200" timestamp="1583501369266" />
-    <state x="0" y="0" width="1920" height="1200" key="SettingsEditor" timestamp="1584043090951">
+    <state x="742" y="317" key="RollbackChangesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1585324792813" />
+    <state x="0" y="0" width="1920" height="1200" key="SettingsEditor" timestamp="1585519425646">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="923" y="201" key="SettingsEditor/0.0.1920.1200/1920.0.1920.1080@0.0.1920.1200" timestamp="1583398523033" />
-    <state x="0" y="0" width="1920" height="1200" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1584043090951" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1584047026611">
+    <state x="0" y="0" width="1920" height="1200" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1585519425646" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1585519840927">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.0.1920.1200/1920.0.1920.1080@0.0.1920.1200" timestamp="1583165461870" />
-    <state width="500" height="445" key="SwitcherDM/0.0.1920.1200@0.0.1920.1200" timestamp="1584047026611" />
-    <state x="736" y="524" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584043978302">
+    <state width="500" height="445" key="SwitcherDM/0.0.1920.1200@0.0.1920.1200" timestamp="1585519840927" />
+    <state x="736" y="524" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585414093637">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="736" y="524" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1200@0.0.1920.1200" timestamp="1584043978302" />
-    <state x="625" y="262" width="670" height="676" key="search.everywhere.popup" timestamp="1584045223815">
+    <state x="736" y="524" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1200@0.0.1920.1200" timestamp="1585414093637" />
+    <state x="630" y="350" width="1082" height="687" key="find.popup" timestamp="1585328940187">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="630" y="350" width="1082" height="687" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1585328940187" />
+    <state x="625" y="285" key="run.anything.popup" timestamp="1585324574195">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="625" y="285" key="run.anything.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1585324574195" />
+    <state x="625" y="262" width="670" height="676" key="search.everywhere.popup" timestamp="1585518653120">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="625" y="262" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200/1920.0.1920.1080@0.0.1920.1200" timestamp="1583164980040" />
-    <state x="625" y="262" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1584045223815" />
+    <state x="625" y="262" width="670" height="676" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1585518653120" />
   </component>
 </project>
