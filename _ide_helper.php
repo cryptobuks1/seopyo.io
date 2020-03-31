@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 6.17.1 on 2020-02-28 15:37:05.
+ * Generated for Laravel 6.17.1 on 2020-03-29 22:40:31.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -11,28 +11,7 @@
  * @see https://github.com/barryvdh/laravel-ide-helper
  */
 
-namespace Illuminate\Support\Facades {
-
-    use Closure;
-    use Illuminate\Mail\Mailer;
-    use Illuminate\View\Factory;
-    use Illuminate\Routing\Router;
-    use Illuminate\Queue\SyncQueue;
-    use Illuminate\Cookie\CookieJar;
-    use Illuminate\Cache\Repository;
-    use Illuminate\Events\Dispatcher;
-    use Illuminate\Auth\SessionGuard;
-    use Illuminate\Routing\Redirector;
-    use Illuminate\Routing\UrlGenerator;
-    use Illuminate\Encryption\Encrypter;
-    use Illuminate\Filesystem\Filesystem;
-    use Illuminate\Routing\RouteRegistrar;
-    use Illuminate\Translation\Translator;
-    use Illuminate\Foundation\Application;
-    use Illuminate\Routing\ResponseFactory;
-    use Illuminate\Database\MySqlConnection;
-    use Illuminate\Broadcasting\Broadcasters\Broadcaster;
-    use Illuminate\Support\Testing\Fakes\NotificationFake;
+namespace Illuminate\Support\Facades { 
 
     /**
      * 
@@ -1432,7 +1411,7 @@ namespace Illuminate\Support\Facades {
         public static function getInstance()
         {
             //Method inherited from \Illuminate\Container\Container            
-                        return Application::getInstance();
+                        return \Illuminate\Foundation\Application::getInstance();
         }
         
         /**
@@ -1445,7 +1424,7 @@ namespace Illuminate\Support\Facades {
         public static function setInstance($container = null)
         {
             //Method inherited from \Illuminate\Container\Container            
-                        return Application::setInstance($container);
+                        return \Illuminate\Foundation\Application::setInstance($container);
         }
         
         /**
@@ -2285,7 +2264,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function macro($name, $macro)
         {
-                        SessionGuard::macro($name, $macro);
+                        \Illuminate\Auth\SessionGuard::macro($name, $macro);
         }
         
         /**
@@ -2299,7 +2278,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function mixin($mixin, $replace = true)
         {
-                        SessionGuard::mixin($mixin, $replace);
+                        \Illuminate\Auth\SessionGuard::mixin($mixin, $replace);
         }
         
         /**
@@ -2311,7 +2290,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function hasMacro($name)
         {
-                        return SessionGuard::hasMacro($name);
+                        return \Illuminate\Auth\SessionGuard::hasMacro($name);
         }
          
     }
@@ -2565,7 +2544,7 @@ namespace Illuminate\Support\Facades {
     /**
      * 
      *
-     * @method static Broadcaster channel(string $channel, callable|string  $callback, array $options = [])
+     * @method static \Illuminate\Broadcasting\Broadcasters\Broadcaster channel(string $channel, callable|string  $callback, array $options = [])
      * @method static mixed auth(\Illuminate\Http\Request $request)
      * @see \Illuminate\Contracts\Broadcasting\Factory
      */ 
@@ -3503,7 +3482,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function macro($name, $macro)
         {
-                        Repository::macro($name, $macro);
+                        \Illuminate\Cache\Repository::macro($name, $macro);
         }
         
         /**
@@ -3517,7 +3496,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function mixin($mixin, $replace = true)
         {
-                        Repository::mixin($mixin, $replace);
+                        \Illuminate\Cache\Repository::mixin($mixin, $replace);
         }
         
         /**
@@ -3529,7 +3508,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function hasMacro($name)
         {
-                        return Repository::hasMacro($name);
+                        return \Illuminate\Cache\Repository::hasMacro($name);
         }
         
         /**
@@ -3910,7 +3889,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function macro($name, $macro)
         {
-                        CookieJar::macro($name, $macro);
+                        \Illuminate\Cookie\CookieJar::macro($name, $macro);
         }
         
         /**
@@ -3924,7 +3903,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function mixin($mixin, $replace = true)
         {
-                        CookieJar::mixin($mixin, $replace);
+                        \Illuminate\Cookie\CookieJar::mixin($mixin, $replace);
         }
         
         /**
@@ -3936,7 +3915,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function hasMacro($name)
         {
-                        return CookieJar::hasMacro($name);
+                        return \Illuminate\Cookie\CookieJar::hasMacro($name);
         }
          
     }
@@ -3958,7 +3937,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function supported($key, $cipher)
         {
-                        return Encrypter::supported($key, $cipher);
+                        return \Illuminate\Encryption\Encrypter::supported($key, $cipher);
         }
         
         /**
@@ -3970,7 +3949,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function generateKey($cipher)
         {
-                        return Encrypter::generateKey($cipher);
+                        return \Illuminate\Encryption\Encrypter::generateKey($cipher);
         }
         
         /**
@@ -4977,7 +4956,7 @@ namespace Illuminate\Support\Facades {
         public static function resolverFor($driver, $callback)
         {
             //Method inherited from \Illuminate\Database\Connection            
-                        MySqlConnection::resolverFor($driver, $callback);
+                        \Illuminate\Database\MySqlConnection::resolverFor($driver, $callback);
         }
         
         /**
@@ -4990,7 +4969,7 @@ namespace Illuminate\Support\Facades {
         public static function getResolver($driver)
         {
             //Method inherited from \Illuminate\Database\Connection            
-                        return MySqlConnection::getResolver($driver);
+                        return \Illuminate\Database\MySqlConnection::getResolver($driver);
         }
         
         /**
@@ -5271,7 +5250,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function macro($name, $macro)
         {
-                        Dispatcher::macro($name, $macro);
+                        \Illuminate\Events\Dispatcher::macro($name, $macro);
         }
         
         /**
@@ -5285,7 +5264,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function mixin($mixin, $replace = true)
         {
-                        Dispatcher::mixin($mixin, $replace);
+                        \Illuminate\Events\Dispatcher::mixin($mixin, $replace);
         }
         
         /**
@@ -5297,7 +5276,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function hasMacro($name)
         {
-                        return Dispatcher::hasMacro($name);
+                        return \Illuminate\Events\Dispatcher::hasMacro($name);
         }
         
         /**
@@ -5922,7 +5901,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function macro($name, $macro)
         {
-                        Filesystem::macro($name, $macro);
+                        \Illuminate\Filesystem\Filesystem::macro($name, $macro);
         }
         
         /**
@@ -5936,7 +5915,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function mixin($mixin, $replace = true)
         {
-                        Filesystem::mixin($mixin, $replace);
+                        \Illuminate\Filesystem\Filesystem::mixin($mixin, $replace);
         }
         
         /**
@@ -5948,7 +5927,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function hasMacro($name)
         {
-                        return Filesystem::hasMacro($name);
+                        return \Illuminate\Filesystem\Filesystem::hasMacro($name);
         }
          
     }
@@ -6667,7 +6646,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function macro($name, $macro)
         {
-                        Translator::macro($name, $macro);
+                        \Illuminate\Translation\Translator::macro($name, $macro);
         }
         
         /**
@@ -6681,7 +6660,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function mixin($mixin, $replace = true)
         {
-                        Translator::mixin($mixin, $replace);
+                        \Illuminate\Translation\Translator::mixin($mixin, $replace);
         }
         
         /**
@@ -6693,7 +6672,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function hasMacro($name)
         {
-                        return Translator::hasMacro($name);
+                        return \Illuminate\Translation\Translator::hasMacro($name);
         }
          
     }
@@ -7258,7 +7237,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function macro($name, $macro)
         {
-                        Mailer::macro($name, $macro);
+                        \Illuminate\Mail\Mailer::macro($name, $macro);
         }
         
         /**
@@ -7272,7 +7251,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function mixin($mixin, $replace = true)
         {
-                        Mailer::mixin($mixin, $replace);
+                        \Illuminate\Mail\Mailer::mixin($mixin, $replace);
         }
         
         /**
@@ -7284,7 +7263,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function hasMacro($name)
         {
-                        return Mailer::hasMacro($name);
+                        return \Illuminate\Mail\Mailer::hasMacro($name);
         }
         
         /**
@@ -7677,7 +7656,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function macro($name, $macro)
         {
-                        NotificationFake::macro($name, $macro);
+                        \Illuminate\Support\Testing\Fakes\NotificationFake::macro($name, $macro);
         }
         
         /**
@@ -7691,7 +7670,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function mixin($mixin, $replace = true)
         {
-                        NotificationFake::mixin($mixin, $replace);
+                        \Illuminate\Support\Testing\Fakes\NotificationFake::mixin($mixin, $replace);
         }
         
         /**
@@ -7703,7 +7682,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function hasMacro($name)
         {
-                        return NotificationFake::hasMacro($name);
+                        return \Illuminate\Support\Testing\Fakes\NotificationFake::hasMacro($name);
         }
          
     }
@@ -7712,7 +7691,7 @@ namespace Illuminate\Support\Facades {
      * 
      *
      * @method static string sendResetLink(array $credentials)
-     * @method static mixed reset(array $credentials, Closure $callback)
+     * @method static mixed reset(array $credentials, \Closure $callback)
      * @see \Illuminate\Auth\Passwords\PasswordBroker
      */ 
     class Password {
@@ -8239,7 +8218,7 @@ namespace Illuminate\Support\Facades {
         public static function createPayloadUsing($callback)
         {
             //Method inherited from \Illuminate\Queue\Queue            
-                        SyncQueue::createPayloadUsing($callback);
+                        \Illuminate\Queue\SyncQueue::createPayloadUsing($callback);
         }
         
         /**
@@ -8465,7 +8444,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function macro($name, $macro)
         {
-                        Redirector::macro($name, $macro);
+                        \Illuminate\Routing\Redirector::macro($name, $macro);
         }
         
         /**
@@ -8479,7 +8458,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function mixin($mixin, $replace = true)
         {
-                        Redirector::mixin($mixin, $replace);
+                        \Illuminate\Routing\Redirector::mixin($mixin, $replace);
         }
         
         /**
@@ -8491,7 +8470,105 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function hasMacro($name)
         {
-                        return Redirector::hasMacro($name);
+                        return \Illuminate\Routing\Redirector::hasMacro($name);
+        }
+         
+    }
+
+    /**
+     * 
+     *
+     */ 
+    class Redis {
+        
+        /**
+         * Get a Redis connection by name.
+         *
+         * @param string|null $name
+         * @return \Illuminate\Redis\Connections\Connection 
+         * @static 
+         */ 
+        public static function connection($name = null)
+        {
+                        /** @var \Illuminate\Redis\RedisManager $instance */
+                        return $instance->connection($name);
+        }
+        
+        /**
+         * Resolve the given connection by name.
+         *
+         * @param string|null $name
+         * @return \Illuminate\Redis\Connections\Connection 
+         * @throws \InvalidArgumentException
+         * @static 
+         */ 
+        public static function resolve($name = null)
+        {
+                        /** @var \Illuminate\Redis\RedisManager $instance */
+                        return $instance->resolve($name);
+        }
+        
+        /**
+         * Return all of the created connections.
+         *
+         * @return array 
+         * @static 
+         */ 
+        public static function connections()
+        {
+                        /** @var \Illuminate\Redis\RedisManager $instance */
+                        return $instance->connections();
+        }
+        
+        /**
+         * Enable the firing of Redis command events.
+         *
+         * @return void 
+         * @static 
+         */ 
+        public static function enableEvents()
+        {
+                        /** @var \Illuminate\Redis\RedisManager $instance */
+                        $instance->enableEvents();
+        }
+        
+        /**
+         * Disable the firing of Redis command events.
+         *
+         * @return void 
+         * @static 
+         */ 
+        public static function disableEvents()
+        {
+                        /** @var \Illuminate\Redis\RedisManager $instance */
+                        $instance->disableEvents();
+        }
+        
+        /**
+         * Set the default driver.
+         *
+         * @param string $driver
+         * @return void 
+         * @static 
+         */ 
+        public static function setDriver($driver)
+        {
+                        /** @var \Illuminate\Redis\RedisManager $instance */
+                        $instance->setDriver($driver);
+        }
+        
+        /**
+         * Register a custom driver creator Closure.
+         *
+         * @param string $driver
+         * @param \Closure $callback
+         * @return \Illuminate\Redis\RedisManager 
+         * @static 
+         */ 
+        public static function extend($driver, $callback)
+        {
+                        /** @var \Illuminate\Redis\RedisManager $instance */
+                        return $instance->extend($driver, $callback);
         }
          
     }
@@ -10893,7 +10970,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function macro($name, $macro)
         {
-                        ResponseFactory::macro($name, $macro);
+                        \Illuminate\Routing\ResponseFactory::macro($name, $macro);
         }
         
         /**
@@ -10907,7 +10984,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function mixin($mixin, $replace = true)
         {
-                        ResponseFactory::mixin($mixin, $replace);
+                        \Illuminate\Routing\ResponseFactory::mixin($mixin, $replace);
         }
         
         /**
@@ -10919,7 +10996,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function hasMacro($name)
         {
-                        return ResponseFactory::hasMacro($name);
+                        return \Illuminate\Routing\ResponseFactory::hasMacro($name);
         }
          
     }
@@ -10927,13 +11004,13 @@ namespace Illuminate\Support\Facades {
     /**
      * 
      *
-     * @method static RouteRegistrar prefix(string  $prefix)
-     * @method static RouteRegistrar where(array  $where)
-     * @method static RouteRegistrar middleware(array|string|null $middleware)
-     * @method static RouteRegistrar as(string $value)
-     * @method static RouteRegistrar domain(string $value)
-     * @method static RouteRegistrar name(string $value)
-     * @method static RouteRegistrar namespace(string $value)
+     * @method static \Illuminate\Routing\RouteRegistrar prefix(string  $prefix)
+     * @method static \Illuminate\Routing\RouteRegistrar where(array  $where)
+     * @method static \Illuminate\Routing\RouteRegistrar middleware(array|string|null $middleware)
+     * @method static \Illuminate\Routing\RouteRegistrar as(string $value)
+     * @method static \Illuminate\Routing\RouteRegistrar domain(string $value)
+     * @method static \Illuminate\Routing\RouteRegistrar name(string $value)
+     * @method static \Illuminate\Routing\RouteRegistrar namespace(string $value)
      * @see \Illuminate\Routing\Router
      */ 
     class Route {
@@ -11296,7 +11373,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function toResponse($request, $response)
         {
-                        return Router::toResponse($request, $response);
+                        return \Illuminate\Routing\Router::toResponse($request, $response);
         }
         
         /**
@@ -11804,7 +11881,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function macro($name, $macro)
         {
-                        Router::macro($name, $macro);
+                        \Illuminate\Routing\Router::macro($name, $macro);
         }
         
         /**
@@ -11818,7 +11895,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function mixin($mixin, $replace = true)
         {
-                        Router::mixin($mixin, $replace);
+                        \Illuminate\Routing\Router::mixin($mixin, $replace);
         }
         
         /**
@@ -11830,7 +11907,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function hasMacro($name)
         {
-                        return Router::hasMacro($name);
+                        return \Illuminate\Routing\Router::hasMacro($name);
         }
         
         /**
@@ -11855,7 +11932,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function layout($layout)
         {
-                        return Router::layout($layout);
+                        return \Illuminate\Routing\Router::layout($layout);
         }
         
         /**
@@ -11865,7 +11942,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function section($section)
         {
-                        return Router::section($section);
+                        return \Illuminate\Routing\Router::section($section);
         }
         
         /**
@@ -11875,7 +11952,320 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function livewire($uri, $component = null)
         {
-                        return Router::livewire($uri, $component);
+                        return \Illuminate\Routing\Router::livewire($uri, $component);
+        }
+         
+    }
+
+    /**
+     * 
+     *
+     * @see \Illuminate\Database\Schema\Builder
+     */ 
+    class Schema {
+        
+        /**
+         * Determine if the given table exists.
+         *
+         * @param string $table
+         * @return bool 
+         * @static 
+         */ 
+        public static function hasTable($table)
+        {
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        return $instance->hasTable($table);
+        }
+        
+        /**
+         * Get the column listing for a given table.
+         *
+         * @param string $table
+         * @return array 
+         * @static 
+         */ 
+        public static function getColumnListing($table)
+        {
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        return $instance->getColumnListing($table);
+        }
+        
+        /**
+         * Drop all tables from the database.
+         *
+         * @return void 
+         * @static 
+         */ 
+        public static function dropAllTables()
+        {
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        $instance->dropAllTables();
+        }
+        
+        /**
+         * Drop all views from the database.
+         *
+         * @return void 
+         * @static 
+         */ 
+        public static function dropAllViews()
+        {
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        $instance->dropAllViews();
+        }
+        
+        /**
+         * Get all of the table names for the database.
+         *
+         * @return array 
+         * @static 
+         */ 
+        public static function getAllTables()
+        {
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        return $instance->getAllTables();
+        }
+        
+        /**
+         * Get all of the view names for the database.
+         *
+         * @return array 
+         * @static 
+         */ 
+        public static function getAllViews()
+        {
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        return $instance->getAllViews();
+        }
+        
+        /**
+         * Set the default string length for migrations.
+         *
+         * @param int $length
+         * @return void 
+         * @static 
+         */ 
+        public static function defaultStringLength($length)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        \Illuminate\Database\Schema\MySqlBuilder::defaultStringLength($length);
+        }
+        
+        /**
+         * Determine if the given table has a given column.
+         *
+         * @param string $table
+         * @param string $column
+         * @return bool 
+         * @static 
+         */ 
+        public static function hasColumn($table, $column)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        return $instance->hasColumn($table, $column);
+        }
+        
+        /**
+         * Determine if the given table has given columns.
+         *
+         * @param string $table
+         * @param array $columns
+         * @return bool 
+         * @static 
+         */ 
+        public static function hasColumns($table, $columns)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        return $instance->hasColumns($table, $columns);
+        }
+        
+        /**
+         * Get the data type for the given column name.
+         *
+         * @param string $table
+         * @param string $column
+         * @return string 
+         * @static 
+         */ 
+        public static function getColumnType($table, $column)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        return $instance->getColumnType($table, $column);
+        }
+        
+        /**
+         * Modify a table on the schema.
+         *
+         * @param string $table
+         * @param \Closure $callback
+         * @return void 
+         * @static 
+         */ 
+        public static function table($table, $callback)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        $instance->table($table, $callback);
+        }
+        
+        /**
+         * Create a new table on the schema.
+         *
+         * @param string $table
+         * @param \Closure $callback
+         * @return void 
+         * @static 
+         */ 
+        public static function create($table, $callback)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        $instance->create($table, $callback);
+        }
+        
+        /**
+         * Drop a table from the schema.
+         *
+         * @param string $table
+         * @return void 
+         * @static 
+         */ 
+        public static function drop($table)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        $instance->drop($table);
+        }
+        
+        /**
+         * Drop a table from the schema if it exists.
+         *
+         * @param string $table
+         * @return void 
+         * @static 
+         */ 
+        public static function dropIfExists($table)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        $instance->dropIfExists($table);
+        }
+        
+        /**
+         * Drop all types from the database.
+         *
+         * @return void 
+         * @throws \LogicException
+         * @static 
+         */ 
+        public static function dropAllTypes()
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        $instance->dropAllTypes();
+        }
+        
+        /**
+         * Rename a table on the schema.
+         *
+         * @param string $from
+         * @param string $to
+         * @return void 
+         * @static 
+         */ 
+        public static function rename($from, $to)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        $instance->rename($from, $to);
+        }
+        
+        /**
+         * Enable foreign key constraints.
+         *
+         * @return bool 
+         * @static 
+         */ 
+        public static function enableForeignKeyConstraints()
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        return $instance->enableForeignKeyConstraints();
+        }
+        
+        /**
+         * Disable foreign key constraints.
+         *
+         * @return bool 
+         * @static 
+         */ 
+        public static function disableForeignKeyConstraints()
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        return $instance->disableForeignKeyConstraints();
+        }
+        
+        /**
+         * Register a custom Doctrine mapping type.
+         *
+         * @param string $class
+         * @param string $name
+         * @param string $type
+         * @return void 
+         * @throws \Doctrine\DBAL\DBALException
+         * @throws \RuntimeException
+         * @static 
+         */ 
+        public static function registerCustomDoctrineType($class, $name, $type)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        $instance->registerCustomDoctrineType($class, $name, $type);
+        }
+        
+        /**
+         * Get the database connection instance.
+         *
+         * @return \Illuminate\Database\Connection 
+         * @static 
+         */ 
+        public static function getConnection()
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        return $instance->getConnection();
+        }
+        
+        /**
+         * Set the database connection instance.
+         *
+         * @param \Illuminate\Database\Connection $connection
+         * @return \Illuminate\Database\Schema\MySqlBuilder 
+         * @static 
+         */ 
+        public static function setConnection($connection)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        return $instance->setConnection($connection);
+        }
+        
+        /**
+         * Set the Schema Blueprint resolver callback.
+         *
+         * @param \Closure $resolver
+         * @return void 
+         * @static 
+         */ 
+        public static function blueprintResolver($resolver)
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        /** @var \Illuminate\Database\Schema\MySqlBuilder $instance */
+                        $instance->blueprintResolver($resolver);
         }
          
     }
@@ -13630,7 +14020,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function macro($name, $macro)
         {
-                        UrlGenerator::macro($name, $macro);
+                        \Illuminate\Routing\UrlGenerator::macro($name, $macro);
         }
         
         /**
@@ -13644,7 +14034,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function mixin($mixin, $replace = true)
         {
-                        UrlGenerator::mixin($mixin, $replace);
+                        \Illuminate\Routing\UrlGenerator::mixin($mixin, $replace);
         }
         
         /**
@@ -13656,7 +14046,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function hasMacro($name)
         {
-                        return UrlGenerator::hasMacro($name);
+                        return \Illuminate\Routing\UrlGenerator::hasMacro($name);
         }
          
     }
@@ -14215,7 +14605,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function macro($name, $macro)
         {
-                        Factory::macro($name, $macro);
+                        \Illuminate\View\Factory::macro($name, $macro);
         }
         
         /**
@@ -14229,7 +14619,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function mixin($mixin, $replace = true)
         {
-                        Factory::mixin($mixin, $replace);
+                        \Illuminate\View\Factory::mixin($mixin, $replace);
         }
         
         /**
@@ -14241,7 +14631,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function hasMacro($name)
         {
-                        return Factory::hasMacro($name);
+                        return \Illuminate\View\Factory::hasMacro($name);
         }
         
         /**
@@ -14467,7 +14857,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function parentPlaceholder($section = '')
         {
-                        return Factory::parentPlaceholder($section);
+                        return \Illuminate\View\Factory::parentPlaceholder($section);
         }
         
         /**
@@ -14976,6 +15366,127 @@ namespace Facade\Ignition\Facades {
  
 }
 
+namespace Laravel\Horizon { 
+
+    /**
+     * 
+     *
+     */ 
+    class Horizon {
+         
+    }
+ 
+}
+
+namespace Laravel\Socialite\Facades { 
+
+    /**
+     * 
+     *
+     * @see \Laravel\Socialite\SocialiteManager
+     */ 
+    class Socialite {
+        
+        /**
+         * Get a driver instance.
+         *
+         * @param string $driver
+         * @return mixed 
+         * @static 
+         */ 
+        public static function with($driver)
+        {
+                        /** @var \Laravel\Socialite\SocialiteManager $instance */
+                        return $instance->with($driver);
+        }
+        
+        /**
+         * Build an OAuth 2 provider instance.
+         *
+         * @param string $provider
+         * @param array $config
+         * @return \Laravel\Socialite\Two\AbstractProvider 
+         * @static 
+         */ 
+        public static function buildProvider($provider, $config)
+        {
+                        /** @var \Laravel\Socialite\SocialiteManager $instance */
+                        return $instance->buildProvider($provider, $config);
+        }
+        
+        /**
+         * Format the server configuration.
+         *
+         * @param array $config
+         * @return array 
+         * @static 
+         */ 
+        public static function formatConfig($config)
+        {
+                        /** @var \Laravel\Socialite\SocialiteManager $instance */
+                        return $instance->formatConfig($config);
+        }
+        
+        /**
+         * Get the default driver name.
+         *
+         * @return string 
+         * @throws \InvalidArgumentException
+         * @static 
+         */ 
+        public static function getDefaultDriver()
+        {
+                        /** @var \Laravel\Socialite\SocialiteManager $instance */
+                        return $instance->getDefaultDriver();
+        }
+        
+        /**
+         * Get a driver instance.
+         *
+         * @param string $driver
+         * @return mixed 
+         * @throws \InvalidArgumentException
+         * @static 
+         */ 
+        public static function driver($driver = null)
+        {
+            //Method inherited from \Illuminate\Support\Manager            
+                        /** @var \Laravel\Socialite\SocialiteManager $instance */
+                        return $instance->driver($driver);
+        }
+        
+        /**
+         * Register a custom driver creator Closure.
+         *
+         * @param string $driver
+         * @param \Closure $callback
+         * @return \Laravel\Socialite\SocialiteManager 
+         * @static 
+         */ 
+        public static function extend($driver, $callback)
+        {
+            //Method inherited from \Illuminate\Support\Manager            
+                        /** @var \Laravel\Socialite\SocialiteManager $instance */
+                        return $instance->extend($driver, $callback);
+        }
+        
+        /**
+         * Get all of the created "drivers".
+         *
+         * @return array 
+         * @static 
+         */ 
+        public static function getDrivers()
+        {
+            //Method inherited from \Illuminate\Support\Manager            
+                        /** @var \Laravel\Socialite\SocialiteManager $instance */
+                        return $instance->getDrivers();
+        }
+         
+    }
+ 
+}
+
 namespace Livewire { 
 
     /**
@@ -15241,11 +15752,240 @@ namespace Livewire {
  
 }
 
+namespace Spatie\LaravelImageOptimizer\Facades { 
 
-namespace  {
+    /**
+     * 
+     *
+     */ 
+    class ImageOptimizer {
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getOptimizers()
+        {
+                        /** @var \Spatie\ImageOptimizer\OptimizerChain $instance */
+                        return $instance->getOptimizers();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function addOptimizer($optimizer)
+        {
+                        /** @var \Spatie\ImageOptimizer\OptimizerChain $instance */
+                        return $instance->addOptimizer($optimizer);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setOptimizers($optimizers)
+        {
+                        /** @var \Spatie\ImageOptimizer\OptimizerChain $instance */
+                        return $instance->setOptimizers($optimizers);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setTimeout($timeoutInSeconds)
+        {
+                        /** @var \Spatie\ImageOptimizer\OptimizerChain $instance */
+                        return $instance->setTimeout($timeoutInSeconds);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function useLogger($log)
+        {
+                        /** @var \Spatie\ImageOptimizer\OptimizerChain $instance */
+                        return $instance->useLogger($log);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function optimize($pathToImage, $pathToOutput = null)
+        {
+                        /** @var \Spatie\ImageOptimizer\OptimizerChain $instance */
+                        return $instance->optimize($pathToImage, $pathToOutput);
+        }
+         
+    }
+ 
+}
 
-    use Illuminate\Database\Query\Builder;
-    use Illuminate\Database\Eloquent\Model;
+namespace Vinkla\Hashids\Facades { 
+
+    /**
+     * This is the Hashids facade class.
+     *
+     * @author Vincent Klaiber <hello@doubledip.se>
+     * @method static string encode(mixed ...$numbers) Encode parameters to generate a hash.
+     * @method static array decode(string $hash) Decode a hash to the original parameter values.
+     * @method static string encodeHex(string $str) Encode hexadecimal values and generate a hash string.
+     * @method static string decodeHex(string $hash) Decode a hexadecimal hash.
+     */ 
+    class Hashids {
+        
+        /**
+         * Get the factory instance.
+         *
+         * @return \Vinkla\Hashids\HashidsFactory 
+         * @static 
+         */ 
+        public static function getFactory()
+        {
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        return $instance->getFactory();
+        }
+        
+        /**
+         * Get a connection instance.
+         *
+         * @param string|null $name
+         * @return object 
+         * @static 
+         */ 
+        public static function connection($name = null)
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        return $instance->connection($name);
+        }
+        
+        /**
+         * Reconnect to the given connection.
+         *
+         * @param string|null $name
+         * @return object 
+         * @static 
+         */ 
+        public static function reconnect($name = null)
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        return $instance->reconnect($name);
+        }
+        
+        /**
+         * Disconnect from the given connection.
+         *
+         * @param string|null $name
+         * @return void 
+         * @static 
+         */ 
+        public static function disconnect($name = null)
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        $instance->disconnect($name);
+        }
+        
+        /**
+         * Get the configuration for a connection.
+         *
+         * @param string|null $name
+         * @throws \InvalidArgumentException
+         * @return array 
+         * @static 
+         */ 
+        public static function getConnectionConfig($name = null)
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        return $instance->getConnectionConfig($name);
+        }
+        
+        /**
+         * Get the default connection name.
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function getDefaultConnection()
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        return $instance->getDefaultConnection();
+        }
+        
+        /**
+         * Set the default connection name.
+         *
+         * @param string $name
+         * @return void 
+         * @static 
+         */ 
+        public static function setDefaultConnection($name)
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        $instance->setDefaultConnection($name);
+        }
+        
+        /**
+         * Register an extension connection resolver.
+         *
+         * @param string $name
+         * @param callable $resolver
+         * @return void 
+         * @static 
+         */ 
+        public static function extend($name, $resolver)
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        $instance->extend($name, $resolver);
+        }
+        
+        /**
+         * Return all of the created connections.
+         *
+         * @return \GrahamCampbell\Manager\array<string,object> 
+         * @static 
+         */ 
+        public static function getConnections()
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        return $instance->getConnections();
+        }
+        
+        /**
+         * Get the config instance.
+         *
+         * @return \Illuminate\Contracts\Config\Repository 
+         * @static 
+         */ 
+        public static function getConfig()
+        {
+            //Method inherited from \GrahamCampbell\Manager\AbstractManager            
+                        /** @var \Vinkla\Hashids\HashidsManager $instance */
+                        return $instance->getConfig();
+        }
+         
+    }
+ 
+}
+
+
+namespace  { 
 
     class App extends \Illuminate\Support\Facades\App {}
 
@@ -15271,7 +16011,7 @@ namespace  {
 
     class DB extends \Illuminate\Support\Facades\DB {}
 
-    class Eloquent extends Model {
+    class Eloquent extends \Illuminate\Database\Eloquent\Model {         
             /**
              * Create and return an un-saved model instance.
              *
@@ -18063,7 +18803,7 @@ namespace  {
              */ 
             public static function macro($name, $macro)
             {
-                                Builder::macro($name, $macro);
+                                \Illuminate\Database\Query\Builder::macro($name, $macro);
             }
          
             /**
@@ -18077,7 +18817,7 @@ namespace  {
              */ 
             public static function mixin($mixin, $replace = true)
             {
-                                Builder::mixin($mixin, $replace);
+                                \Illuminate\Database\Query\Builder::mixin($mixin, $replace);
             }
          
             /**
@@ -18118,6 +18858,8 @@ namespace  {
 
     class Redirect extends \Illuminate\Support\Facades\Redirect {}
 
+    class Redis extends \Illuminate\Support\Facades\Redis {}
+
     class Request extends \Illuminate\Support\Facades\Request {}
 
     class Response extends \Illuminate\Support\Facades\Response {}
@@ -18140,7 +18882,15 @@ namespace  {
 
     class Flare extends \Facade\Ignition\Facades\Flare {}
 
+    class Horizon extends \Laravel\Horizon\Horizon {}
+
+    class Socialite extends \Laravel\Socialite\Facades\Socialite {}
+
     class Livewire extends \Livewire\Livewire {}
+
+    class ImageOptimizer extends \Spatie\LaravelImageOptimizer\Facades\ImageOptimizer {}
+
+    class Hashids extends \Vinkla\Hashids\Facades\Hashids {}
  
 }
 

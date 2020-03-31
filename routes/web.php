@@ -18,8 +18,8 @@ Route::get('authorize/{provider}/callback', 'Auth\LoginController@handleProvider
 
 Route::layout('layouts.auth')->section('body')->prefix('auth')->middleware('guest')->group(function () {
     $accountRoutes = [
-        '/signin' => 'auth.signin',
-        '/signup' => 'auth.signup',
+        '/signin'          => 'auth.signin',
+        '/signup'          => 'auth.signup',
         '/forgot-password' => 'auth.forgot-password',
     ];
 
@@ -44,12 +44,15 @@ Route::layout('layouts.app')->section('body')->group(function () {
     });
 
     $mainRoutes = [
-        '/'         => 'home',
-        '/trending' => 'trending',
-        '/faq'      => 'faq',
-        '/contact'  => 'contact',
-        '/support'  => 'support',
-        '/{id}'     => 'profile',
+        '/'                     => 'home',
+        '/trending'             => 'trending',
+        '/faq'                  => 'faq',
+        '/contact'              => 'contact',
+        '/support'              => 'support',
+        '/{user}'               => 'profile',
+        '/{user}/collections'   => 'profile.collections',
+        '/{user}/followers'     => 'profile.followers',
+        '/{user}/organizations' => 'profile.organizations',
     ];
 
     foreach ($mainRoutes as $path => $name) {

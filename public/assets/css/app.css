@@ -24844,6 +24844,7 @@ body.nav-shown {
 
 .nk-main {
   position: relative;
+  padding-bottom: 4rem;
 }
 
 .nk-wrap {
@@ -29346,7 +29347,7 @@ h6 .badge {
 
 .icon-overlap li {
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
 }
 
 .icon-overlap li + li {
@@ -29455,6 +29456,26 @@ h6 .badge {
 
 .icon[class*=bg-eth-dim] {
   color: #6174b9;
+}
+
+.icon[class*=icon-xs] {
+  font-size: 0.5rem;
+}
+
+.icon[class*=icon-sm] {
+  font-size: 1.5rem;
+}
+
+.icon[class*=icon-md] {
+  font-size: 3rem;
+}
+
+.icon[class*=icon-lg] {
+  font-size: 4rem;
+}
+
+.icon[class*=icon-xl] {
+  font-size: 5rem;
 }
 
 .icon-avatar {
