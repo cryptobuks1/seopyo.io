@@ -12,6 +12,15 @@ use Illuminate\Database\Eloquent\Model;
 class Collection extends Model
 {
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'name', 'description', 'icon_image', 'cover_image',
+    ];
+
+    /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     public function bookmarks()
@@ -25,5 +34,17 @@ class Collection extends Model
     public function owner()
     {
         return $this->morphTo();
+    }
+
+    /**
+     * @param \App\Bookmark $bookmark
+     *
+     * @return bool
+     *
+     * @noinspection PhpUnused
+     */
+    public function hasBookmark(Bookmark $bookmark)
+    {
+        return $this->bookmarks()->where('id', $bookmark->id)->count() > 0;
     }
 }

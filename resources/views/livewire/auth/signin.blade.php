@@ -33,7 +33,7 @@
                     <em class="passcode-icon icon-hide icon ni ni-eye-off"></em>
                 </a>
                 <input type="password" class="form-control form-control-lg" id="password" name="password" wire:model="password" placeholder="{{ __('Enter your password') }}">
-                @error('email') <span class="error">{{ $message }}</span> @enderror
+                @error('password') <span class="error">{{ $message }}</span> @enderror
             </div>
         </div>
         <div class="form-group">

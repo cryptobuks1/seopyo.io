@@ -33346,5 +33346,60 @@ p > span > .icon.ni {
   border-radius: 5px;
 }
 
+.cmp-header-bookmarklet {
+  width: 100%;
+  height: 42px;
+  margin: 0 6rem;
+  position: relative;
+}
+
+.cmp-header-bookmarklet .form-control,
+.cmp-header-bookmarklet .btn-form-submit {
+  font-size: 1rem;
+}
+
+.cmp-header-bookmarklet .form-control {
+  padding: 1.25rem;
+}
+
+.cmp-header-bookmarklet .icon {
+  width: 20px;
+  display: flex;
+  font-size: 1.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.cmp-header-bookmarklet .bookmarklet-collection-list {
+  top: 0;
+  left: 4px;
+  right: 4px;
+  position: absolute;
+}
+
+.cmp-header-bookmarklet .bookmarklet-collection-list .card .card-inner {
+  padding: 0.5rem;
+}
+
+.cmp-header-bookmarklet .bookmarklet-collection-list .card > .card-inner:first-child {
+  background-color: #f4bd0e;
+}
+
+.cmp-header-bookmarklet .bookmarklet-collection-list .card > .card-inner:first-child .card-head {
+  margin: 0;
+}
+
+.cmp-header-bookmarklet .bookmarklet-collection-list .card > .card-inner:first-child .card-title {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cmp-header-bookmarklet .bookmarklet-collection-form {
+  padding: 1rem;
+  background-color: #ebeef2;
+}
+
 /* Pages */
 

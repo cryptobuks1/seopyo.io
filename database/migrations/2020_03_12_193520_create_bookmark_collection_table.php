@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBookmarksCollectionsTable extends Migration
+class CreateBookmarkCollectionTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateBookmarksCollectionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('bookmarks_collections', function (Blueprint $table) {
+        Schema::create('bookmark_collection', function (Blueprint $table) {
             $table->bigInteger('bookmark_id')->unsigned();
             $table->bigInteger('collection_id')->unsigned();
 
@@ -29,6 +29,6 @@ class CreateBookmarksCollectionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bookmarks_collections');
+        Schema::dropIfExists('bookmark_collection');
     }
 }

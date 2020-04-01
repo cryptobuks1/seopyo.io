@@ -10,6 +10,7 @@
                 </a>
             </div>
             @if(auth()->check() && auth()->user())
+                @livewire('components.header-bookmarklet')
                 <div class="nk-header-tools">
                     <ul class="nk-quick-nav">
                         <li class="dropdown user-dropdown">
