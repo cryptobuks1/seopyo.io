@@ -33327,3 +33327,24 @@ p > span > .icon.ni {
   }
 }
 
+.timeline-list .timeline-item a {
+  font-weight: 700;
+  color: #364a63;
+}
+
+.timeline-list .timeline-item .timeline-title {
+  font-weight: 400;
+}
+
+.timeline-list .timeline-item .timeline-image {
+  width: 100px;
+  margin-left: auto;
+  border-radius: 6px;
+}
+
+.timeline-list .timeline-item .timeline-image img {
+  border-radius: 5px;
+}
+
+/* Pages */
+

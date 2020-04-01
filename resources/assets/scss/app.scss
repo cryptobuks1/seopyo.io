@@ -1,5 +1,5 @@
 /* Variables */
-@import './variables.scss';
+@import './variables';
 
 /* Core Theme */
 //@import "core/fonts/roboto";
@@ -20,3 +20,7 @@
 
 /* Components */
 @import './components/logo';
+@import './components/timeline';
+
+/* Pages */
+@import './pages/home';

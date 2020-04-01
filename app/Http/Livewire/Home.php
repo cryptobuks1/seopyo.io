@@ -16,6 +16,11 @@ class Home extends Component
      */
     public function render()
     {
-        return view('livewire.home');
+//        $timelineData = [];
+//        $timelineData = new TimelineTransformer::transform($timelineData);
+
+        return view('livewire.home', [
+            'timelineData' => [],
+        ]);
     }
 }

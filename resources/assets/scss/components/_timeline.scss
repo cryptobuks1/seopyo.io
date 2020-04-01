@@ -1,0 +1,24 @@
+@import '../variables';
+
+.timeline-list {
+   .timeline-item {
+      a {
+         font-weight: 700;
+         color: $base-color;
+      }
+
+      .timeline-title {
+         font-weight: 400;
+      }
+
+      .timeline-image {
+         width: 100px;
+         margin-left: auto;
+         border-radius: 6px;
+
+         img {
+            border-radius: $border-radius-lg;
+         }
+      }
+   }
+}
