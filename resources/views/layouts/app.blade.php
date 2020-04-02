@@ -3,7 +3,7 @@
 <head>
     @include('livewire.partials.head')
 </head>
-<body>
+<body class="has-aside">
 <div class="nk-app-root">
     <div class="nk-main ">
         <div class="nk-wrap ">

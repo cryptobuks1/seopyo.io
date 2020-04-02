@@ -1,0 +1,127 @@
+@import '../variables';
+
+$cmpcl-margin: 1rem !default;
+
+$cmpcl-item-gap-x: 1.25rem !default;
+$cmpcl-item-gap-y: 1rem !default;
+
+$cmpcl-item-gap-x-desk: 1.5rem !default;
+$cmpcl-item-gap-y-desk: 1rem !default;
+
+$cmpcl-icon-radius: 4px;
+$cmpcl-icon-width: 1.75rem !default;
+$cmpcl-icon-height: 1.75rem !default;
+$cmpcl-icon-width-desk: 3.5rem !default;
+$cmpcl-icon-height-desk: 3.5rem !default;
+
+.cmp-collection-list {
+   &-item {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: $cmpcl-item-gap-y $cmpcl-item-gap-x;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+
+      &:not(:last-child) {
+         margin-bottom: $cmpcl-margin;
+      }
+   }
+
+   &-btn {
+      padding-left: ($cmpcl-icon-width + $cmpcl-margin);
+   }
+
+   &-desc {
+      display: flex;
+      flex-grow: 1;
+   }
+
+   &-info {
+      margin-top: 0.35rem;
+   }
+
+   &-title {
+      font-size: 1rem;
+      line-height: 1.2;
+   }
+
+   &-name {
+      color: $base-text;
+   }
+
+   &-img {
+      flex-shrink: 0;
+      margin-right: $cmpcl-margin;
+
+      img {
+         object-fit: cover;
+         object-position: center;
+         width: $cmpcl-icon-width;
+         height: $cmpcl-icon-height;
+         border-radius: $cmpcl-icon-radius;
+      }
+   }
+
+   &-meta {
+      .meta-item {
+         display: block;
+         line-height: 1.2;
+         padding: 0.25rem 0;
+      }
+   }
+
+   &-title {
+      .badge {
+         margin-left: $cmpcl-margin;
+      }
+   }
+}
+
+@include media-breakpoint-up(md) {
+   .cmp-collection-list {
+      &-img {
+         margin-right: ($cmpcl-margin * 1.5);
+
+         img {
+            width: $cmpcl-icon-width-desk;
+            height: $cmpcl-icon-height-desk;
+         }
+      }
+
+      &-desc {
+         align-items: center;
+      }
+
+      &-item {
+         padding: $cmpcl-item-gap-y-desk $cmpcl-item-gap-x-desk;
+      }
+
+      &-meta {
+         .meta-item {
+            display: inline-block;
+            padding-right: 1.5rem;
+         }
+      }
+   }
+}
+
+@media (max-width: 459px) {
+   .cmp-collection-list {
+      &-desc {
+         width: 100%;
+         padding-left: ($cmpcl-icon-width + $cmpcl-margin);
+      }
+
+      &-img {
+         position: absolute;
+         margin-left: -($cmpcl-icon-width + $cmpcl-margin);
+      }
+
+      &-btn {
+         margin: $cmpcl-margin 0 ($cmpcl-margin / 2);
+      }
+   }
+}

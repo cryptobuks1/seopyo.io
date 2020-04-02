@@ -7,11 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class Bookmark
  *
- * @property mixed id
+ * @property int id
  * @property string url
  * @property string title
  * @property string image
  * @property array metadata
+ *
  * @package App
  */
 class Bookmark extends Model

@@ -53,6 +53,7 @@ Route::layout('layouts.app')->section('body')->group(function () {
         '/{user}/collections'   => 'profile.collections',
         '/{user}/followers'     => 'profile.followers',
         '/{user}/organizations' => 'profile.organizations',
+        '/c/{collection}'       => 'collections.show',
     ];
 
     foreach ($mainRoutes as $path => $name) {

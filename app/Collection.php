@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class Collection
  *
+ * @property int id
+ * @property string name
+ * @property string description
+ * @property string icon_image
+ * @property string cover_image
+ * @property array metadata
+ *
  * @package App
  */
 class Collection extends Model
@@ -26,6 +33,14 @@ class Collection extends Model
     public function bookmarks()
     {
         return $this->belongsToMany(Bookmark::class);
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function stars()
+    {
+        return $this->belongsToMany(User::class, 'collection_star');
     }
 
     /**

@@ -20,9 +20,9 @@
         </a>
     </li>
     <li class="nk-menu-item">
-        <a href="{{ route('account.collections') }}" class="nk-menu-link">
-            <span class="nk-menu-icon"><i class="icon ni ni-cc-new"></i></span>
-            <span class="nk-menu-text">{{ __('Collections') }}</span>
+        <a href="{{ route('account.settings') }}" class="nk-menu-link">
+            <span class="nk-menu-icon"><i class="icon ni ni-account-setting"></i></span>
+            <span class="nk-menu-text">{{ __('Settings') }}</span>
         </a>
     </li>
     <li class="nk-menu-item">
@@ -32,9 +32,9 @@
         </a>
     </li>
     <li class="nk-menu-item">
-        <a href="{{ route('account.settings') }}" class="nk-menu-link">
-            <span class="nk-menu-icon"><i class="icon ni ni-setting"></i></span>
-            <span class="nk-menu-text">{{ __('Settings') }}</span>
+        <a href="{{ route('account.collections') }}" class="nk-menu-link">
+            <span class="nk-menu-icon"><i class="icon ni ni-cc-new"></i></span>
+            <span class="nk-menu-text">{{ __('Collections') }}</span>
         </a>
     </li>
 </ul>
